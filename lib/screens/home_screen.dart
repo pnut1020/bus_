@@ -1,3 +1,19 @@
+import 'package:bus_/pages/bus196.dart';
+import 'package:bus_/pages/bus196E.dart';
+import 'package:bus_/pages/bus74_1.dart';
+import 'package:bus_/pages/bus74_1E.dart';
+import 'package:bus_/pages/bus80(80_1).dart';
+import 'package:bus_/pages/bus80(80_1)E.dart';
+import 'package:bus_/pages/bus883_1.dart';
+import 'package:bus_/pages/bus883_1E.dart';
+import 'package:bus_/pages/bus884_1.dart';
+import 'package:bus_/pages/bus884_1E.dart';
+import 'package:bus_/pages/bus891_1.dart';
+import 'package:bus_/pages/bus891_1E.dart';
+import 'package:bus_/pages/bus92_1.dart';
+import 'package:bus_/pages/bus92_1E.dart';
+import 'package:bus_/pages/bus92_2.dart';
+import 'package:bus_/pages/bus92_2E.dart';
 import 'package:bus_/widget/contB.dart';
 import 'package:flutter/material.dart';
 
@@ -122,6 +138,10 @@ class _HomeScreenState extends State<HomeScreen> {
               height: 15,
             ),
             Container(
+              margin: const EdgeInsets.symmetric(
+                horizontal: 30,
+                vertical: 20,
+              ),
               padding: const EdgeInsets.symmetric(
                 vertical: 20,
               ),
@@ -194,105 +214,265 @@ class _HomeScreenState extends State<HomeScreen> {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       Column(
-                        children: const [
-                          contB(
-                            bnum: '196',
+                        children: [
+                          TextButton(
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const Bus196(),
+                                ),
+                              );
+                            },
+                            child: const contB(
+                              bnum: '196',
+                            ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 7,
                           ),
-                          contB(
-                            bnum: '74-1',
+                          TextButton(
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const Bus741(),
+                                ),
+                              );
+                            },
+                            child: const contB(
+                              bnum: '74-1',
+                            ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 7,
                           ),
-                          contB(
-                            bnum: '80(80-1)',
+                          TextButton(
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const Bus80801(),
+                                ),
+                              );
+                            },
+                            child: const contB(
+                              bnum: '80(80-1)',
+                            ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 7,
                           ),
-                          contB(
-                            bnum: '883-1',
+                          TextButton(
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const Bus8831(),
+                                ),
+                              );
+                            },
+                            child: const contB(
+                              bnum: '883-1',
+                            ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 7,
                           ),
-                          contB(
-                            bnum: '884-1',
+                          TextButton(
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const Bus8841(),
+                                ),
+                              );
+                            },
+                            child: const contB(
+                              bnum: '884-1',
+                            ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 7,
                           ),
-                          contB(
-                            bnum: '891-1',
+                          TextButton(
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const Bus8911(),
+                                ),
+                              );
+                            },
+                            child: const contB(
+                              bnum: '891-1',
+                            ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 7,
                           ),
-                          contB(
-                            bnum: '92-1',
+                          TextButton(
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const Bus921(),
+                                ),
+                              );
+                            },
+                            child: const contB(
+                              bnum: '92-1',
+                            ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 7,
                           ),
-                          contB(
-                            bnum: '92-2',
+                          TextButton(
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const Bus922(),
+                                ),
+                              );
+                            },
+                            child: const contB(
+                              bnum: '92-2',
+                            ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 7,
                           ),
                         ],
                       ),
                       Column(
-                        children: const [
-                          contB(
-                            bnum: '196',
+                        children: [
+                          TextButton(
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const Bus196E(),
+                                ),
+                              );
+                            },
+                            child: const contB(
+                              bnum: '196',
+                            ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 7,
                           ),
-                          contB(
-                            bnum: '74-1',
+                          TextButton(
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const Bus741E(),
+                                ),
+                              );
+                            },
+                            child: const contB(
+                              bnum: '74-1',
+                            ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 7,
                           ),
-                          contB(
-                            bnum: '80(80-1)',
+                          TextButton(
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const Bus80801E(),
+                                ),
+                              );
+                            },
+                            child: const contB(
+                              bnum: '80(80-1)',
+                            ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 7,
                           ),
-                          contB(
-                            bnum: '883-1',
+                          TextButton(
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const Bus8831E(),
+                                ),
+                              );
+                            },
+                            child: const contB(
+                              bnum: '883-1',
+                            ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 7,
                           ),
-                          contB(
-                            bnum: '884-1',
+                          TextButton(
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const Bus8841E(),
+                                ),
+                              );
+                            },
+                            child: const contB(
+                              bnum: '884-1',
+                            ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 7,
                           ),
-                          contB(
-                            bnum: '891-1',
+                          TextButton(
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const Bus8911E(),
+                                ),
+                              );
+                            },
+                            child: const contB(
+                              bnum: '891-1',
+                            ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 7,
                           ),
-                          contB(
-                            bnum: '92-1',
+                          TextButton(
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const Bus921E(),
+                                ),
+                              );
+                            },
+                            child: const contB(
+                              bnum: '92-1',
+                            ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 7,
                           ),
-                          contB(
-                            bnum: '92-2',
+                          TextButton(
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const Bus922E(),
+                                ),
+                              );
+                            },
+                            child: const contB(
+                              bnum: '92-2',
+                            ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 7,
                           ),
                         ],
