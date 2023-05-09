@@ -10,9 +10,19 @@ class Bus922E extends StatelessWidget {
       body: Column(
         children: [
           AppBar(
-            backgroundColor: Colors.blue[500],
-            title: Row(mainAxisAlignment: MainAxisAlignment.start),
-          ),
+              backgroundColor: Colors.blue[500],
+              title: Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: const [
+                  Text(
+                    '92-2E',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 40,
+                    ),
+                  ),
+                ],
+              )),
         ],
       ),
     );

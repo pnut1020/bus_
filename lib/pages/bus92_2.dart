@@ -11,7 +11,18 @@ class Bus922 extends StatelessWidget {
         children: [
           AppBar(
             backgroundColor: Colors.blue[500],
-            title: Row(mainAxisAlignment: MainAxisAlignment.start),
+            title: Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: const [
+                Text(
+                  '92-2',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 40,
+                  ),
+                ),
+              ],
+            ),
           ),
         ],
       ),

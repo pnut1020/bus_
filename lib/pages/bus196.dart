@@ -11,7 +11,18 @@ class Bus196 extends StatelessWidget {
         children: [
           AppBar(
             backgroundColor: Colors.blue[500],
-            title: Row(mainAxisAlignment: MainAxisAlignment.start),
+            title: Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: const [
+                Text(
+                  '196',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 40,
+                  ),
+                ),
+              ],
+            ),
           ),
         ],
       ),

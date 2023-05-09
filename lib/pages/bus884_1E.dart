@@ -11,7 +11,18 @@ class Bus8841E extends StatelessWidget {
         children: [
           AppBar(
             backgroundColor: Colors.blue[500],
-            title: Row(mainAxisAlignment: MainAxisAlignment.start),
+            title: Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: const [
+                Text(
+                  '884-1E',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 40,
+                  ),
+                ),
+              ],
+            ),
           ),
         ],
       ),
