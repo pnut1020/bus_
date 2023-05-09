@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../pages/bus196.dart';
-
 class contB extends StatelessWidget {
   const contB({
     super.key,
@@ -21,22 +19,12 @@ class contB extends StatelessWidget {
           25,
         ),
       ),
-      child: TextButton(
-        onPressed: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => const Bus196(),
-            ),
-          );
-        },
-        child: Center(
-          child: Text(
-            bnum,
-            style: const TextStyle(
-              color: Colors.white,
-              fontSize: 30,
-            ),
+      child: Center(
+        child: Text(
+          bnum,
+          style: const TextStyle(
+            color: Colors.white,
+            fontSize: 30,
           ),
         ),
       ),
