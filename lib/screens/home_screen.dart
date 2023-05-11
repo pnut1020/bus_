@@ -1,24 +1,6 @@
-import 'package:bus_/pages/bus196E.dart';
-import 'package:bus_/pages/bus74_1.dart';
-import 'package:bus_/pages/bus74_1E.dart';
-import 'package:bus_/pages/bus80(80_1).dart';
-import 'package:bus_/pages/bus80(80_1)E.dart';
-import 'package:bus_/pages/bus883_1.dart';
-import 'package:bus_/pages/bus883_1E.dart';
-import 'package:bus_/pages/bus884_1.dart';
-import 'package:bus_/pages/bus884_1E.dart';
-import 'package:bus_/pages/bus891_1.dart';
-import 'package:bus_/pages/bus891_1E.dart';
-import 'package:bus_/pages/bus92_1.dart';
-import 'package:bus_/pages/bus92_1E.dart';
-import 'package:bus_/pages/bus92_2.dart';
-import 'package:bus_/pages/bus92_2E.dart';
 import 'package:bus_/widget/contB.dart';
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
-
-final Uri url = Uri.parse(
-    'https://bis.gumi.go.kr/city_bus/time_table.do?route_id=19620&brtId=196');
+import 'package:bus_/url.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -150,7 +132,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       Column(
                         children: [
                           GestureDetector(
-                            onTap: busUrl,
+                            onTap: busUrl196,
                             child: const contB(
                               bnum: '196',
                             ),
@@ -158,15 +140,8 @@ class _HomeScreenState extends State<HomeScreen> {
                           const SizedBox(
                             height: 7,
                           ),
-                          TextButton(
-                            onPressed: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => const Bus741(),
-                                ),
-                              );
-                            },
+                          GestureDetector(
+                            onTap: busUrl741,
                             child: const contB(
                               bnum: '74-1',
                             ),
@@ -174,15 +149,8 @@ class _HomeScreenState extends State<HomeScreen> {
                           const SizedBox(
                             height: 7,
                           ),
-                          TextButton(
-                            onPressed: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => const Bus80801(),
-                                ),
-                              );
-                            },
+                          GestureDetector(
+                            onTap: busUrl80801,
                             child: const contB(
                               bnum: '80(80-1)',
                             ),
@@ -190,15 +158,8 @@ class _HomeScreenState extends State<HomeScreen> {
                           const SizedBox(
                             height: 7,
                           ),
-                          TextButton(
-                            onPressed: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => const Bus8831(),
-                                ),
-                              );
-                            },
+                          GestureDetector(
+                            onTap: busUrl8831,
                             child: const contB(
                               bnum: '883-1',
                             ),
@@ -206,15 +167,8 @@ class _HomeScreenState extends State<HomeScreen> {
                           const SizedBox(
                             height: 7,
                           ),
-                          TextButton(
-                            onPressed: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => const Bus8841(),
-                                ),
-                              );
-                            },
+                          GestureDetector(
+                            onTap: busUrl8841,
                             child: const contB(
                               bnum: '884-1',
                             ),
@@ -222,15 +176,8 @@ class _HomeScreenState extends State<HomeScreen> {
                           const SizedBox(
                             height: 7,
                           ),
-                          TextButton(
-                            onPressed: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => const Bus8911(),
-                                ),
-                              );
-                            },
+                          GestureDetector(
+                            onTap: busUrl8911,
                             child: const contB(
                               bnum: '891-1',
                             ),
@@ -238,15 +185,8 @@ class _HomeScreenState extends State<HomeScreen> {
                           const SizedBox(
                             height: 7,
                           ),
-                          TextButton(
-                            onPressed: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => const Bus921(),
-                                ),
-                              );
-                            },
+                          GestureDetector(
+                            onTap: busUrl921,
                             child: const contB(
                               bnum: '92-1',
                             ),
@@ -254,15 +194,8 @@ class _HomeScreenState extends State<HomeScreen> {
                           const SizedBox(
                             height: 7,
                           ),
-                          TextButton(
-                            onPressed: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => const Bus922(),
-                                ),
-                              );
-                            },
+                          GestureDetector(
+                            onTap: busUrl922,
                             child: const contB(
                               bnum: '92-2',
                             ),
@@ -274,15 +207,8 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                       Column(
                         children: [
-                          TextButton(
-                            onPressed: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => const Bus196E(),
-                                ),
-                              );
-                            },
+                          GestureDetector(
+                            onTap: busUrl196e,
                             child: const contB(
                               bnum: '196',
                             ),
@@ -290,15 +216,8 @@ class _HomeScreenState extends State<HomeScreen> {
                           const SizedBox(
                             height: 7,
                           ),
-                          TextButton(
-                            onPressed: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => const Bus741E(),
-                                ),
-                              );
-                            },
+                          GestureDetector(
+                            onTap: busUrl741e,
                             child: const contB(
                               bnum: '74-1',
                             ),
@@ -306,15 +225,8 @@ class _HomeScreenState extends State<HomeScreen> {
                           const SizedBox(
                             height: 7,
                           ),
-                          TextButton(
-                            onPressed: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => const Bus80801E(),
-                                ),
-                              );
-                            },
+                          GestureDetector(
+                            onTap: busUrl80801e,
                             child: const contB(
                               bnum: '80(80-1)',
                             ),
@@ -322,15 +234,8 @@ class _HomeScreenState extends State<HomeScreen> {
                           const SizedBox(
                             height: 7,
                           ),
-                          TextButton(
-                            onPressed: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => const Bus8831E(),
-                                ),
-                              );
-                            },
+                          GestureDetector(
+                            onTap: busUrl8831e,
                             child: const contB(
                               bnum: '883-1',
                             ),
@@ -338,15 +243,8 @@ class _HomeScreenState extends State<HomeScreen> {
                           const SizedBox(
                             height: 7,
                           ),
-                          TextButton(
-                            onPressed: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => const Bus8841E(),
-                                ),
-                              );
-                            },
+                          GestureDetector(
+                            onTap: busUrl8841e,
                             child: const contB(
                               bnum: '884-1',
                             ),
@@ -354,15 +252,8 @@ class _HomeScreenState extends State<HomeScreen> {
                           const SizedBox(
                             height: 7,
                           ),
-                          TextButton(
-                            onPressed: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => const Bus8911E(),
-                                ),
-                              );
-                            },
+                          GestureDetector(
+                            onTap: busUrl8911e,
                             child: const contB(
                               bnum: '891-1',
                             ),
@@ -370,15 +261,8 @@ class _HomeScreenState extends State<HomeScreen> {
                           const SizedBox(
                             height: 7,
                           ),
-                          TextButton(
-                            onPressed: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => const Bus921E(),
-                                ),
-                              );
-                            },
+                          GestureDetector(
+                            onTap: busUrl921e,
                             child: const contB(
                               bnum: '92-1',
                             ),
@@ -386,15 +270,8 @@ class _HomeScreenState extends State<HomeScreen> {
                           const SizedBox(
                             height: 7,
                           ),
-                          TextButton(
-                            onPressed: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => const Bus922E(),
-                                ),
-                              );
-                            },
+                          GestureDetector(
+                            onTap: busUrl922e,
                             child: const contB(
                               bnum: '92-2',
                             ),
@@ -413,11 +290,5 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
       ),
     );
-  }
-
-  Future<void> busUrl() async {
-    if (!await launchUrl(url)) {
-      throw Exception('Could not launch $url');
-    }
   }
 }
