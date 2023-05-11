@@ -1,4 +1,3 @@
-import 'package:bus_/pages/bus196.dart';
 import 'package:bus_/pages/bus196E.dart';
 import 'package:bus_/pages/bus74_1.dart';
 import 'package:bus_/pages/bus74_1E.dart';
@@ -16,6 +15,10 @@ import 'package:bus_/pages/bus92_2.dart';
 import 'package:bus_/pages/bus92_2E.dart';
 import 'package:bus_/widget/contB.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
+
+final Uri url = Uri.parse(
+    'https://bis.gumi.go.kr/city_bus/time_table.do?route_id=19620&brtId=196');
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -146,15 +149,8 @@ class _HomeScreenState extends State<HomeScreen> {
                     children: [
                       Column(
                         children: [
-                          TextButton(
-                            onPressed: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => const Bus196(),
-                                ),
-                              );
-                            },
+                          GestureDetector(
+                            onTap: busUrl,
                             child: const contB(
                               bnum: '196',
                             ),
@@ -417,5 +413,11 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
       ),
     );
+  }
+
+  Future<void> busUrl() async {
+    if (!await launchUrl(url)) {
+      throw Exception('Could not launch $url');
+    }
   }
 }
