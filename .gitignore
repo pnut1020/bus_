@@ -42,3 +42,11 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# ios 빌드 관련 (haiiron project build 의존성 문제 방지)
+ios/Runner.xcodeproj/project.pbxproj
+ios/Runner/Base.lproj/Main.storyboard
+ios/Runner/Info.plist
+macos/Runner.xcodeproj/project.pbxproj
+macos/Runner.xcworkspace/contents.xcworkspacedata
+macos/Podfile.lock

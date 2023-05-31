@@ -33,7 +33,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     Icon(
                       Icons.bus_alert,
                       color: Colors.white,
-                      size: 39,
+                      size: 38,
                     ),
                     SizedBox(
                       width: 20,
@@ -88,7 +88,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             '출발',
                             style: TextStyle(
                               color: Colors.white,
-                              fontSize: 30,
+                              fontSize: 25,
                             ),
                           ),
                         ),
@@ -116,7 +116,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             '종점',
                             style: TextStyle(
                               color: Colors.white,
-                              fontSize: 30,
+                              fontSize: 25, // "종점" 텍스트 사이즈
                             ),
                           ),
                         ),
@@ -124,7 +124,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     ],
                   ),
                   const SizedBox(
-                    height: 40,
+                    height: 20,
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,

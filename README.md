@@ -1,16 +1,18 @@
 # bus_
 
-A new Flutter project.
+ikw bus application withFlutter project.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## contB
+> 2023/05/24
+> 1ine 11 ~ 18
+>> 위젯 사이즈 변경 코드추가
+```dart
+// get screen size part
+// get screen size part
+    double screenWidth = MediaQuery.of(context).size.width; // mobile widget
+    double screenHeight = MediaQuery.of(context).size.height; // mobile height
+// set widget size part
+// set widget size part
+    double widget_Width = screenWidth * 0.4; // button size
+    double widget_Height = screenHeight * 0.1; // button size
+```
